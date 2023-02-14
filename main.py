@@ -74,35 +74,16 @@ def ranking():
     ranking =ranking.sort_values(by=["total"],ascending=False)
     ranking.to_csv("customer_ranking.csv",index=False)
     return ranking.to_json(orient="records")    
-@app.post("/upload/orders")  
+@app.post("/upload")  
 async def upload_total(file : UploadFile):
     try:
-        with open("orders.csv","wb") as orders:
+        with open(file.filename,"wb") as new:
          data = await file.read()
-         orders.write(data)
-         orders.close()
-        return "succes"
+         new.write(data)
+         new.close()
+        return "success"
     except:
         raise HTTPException(status_code=204,detail="El archivo es incorrecto")
-
-@app.post("/upload/products")  
-async def upload_total(file : UploadFile):
-    try:
-        with open("products.csv","wb") as products:
-            data = await file.read()
-            products.write(data)
-            products.close()
-        return "succes"
-    except:
-        raise HTTPException(status_code=204,detail="El archivo es incorrecto")
-
-@app.post("/upload/customers")  
-async def upload_total(file : UploadFile):
-    with open("customers.csv","wb") as customers:
-         data = await file.read()
-         customers.write(data)
-         customers.close()
-    return "succes"
 
 @app.get("/download/{filename}")
 async def download_file(filename:str):
