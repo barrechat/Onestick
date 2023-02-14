@@ -1,0 +1,6 @@
+De momento he creado las funbcionalidad con forma de api, he utilizado fastapi, ya que es el framework que conozco para hacer un servidor con python.
+He ido siguiendo la documentacion o los projectos que hice en los momentos que me encontraba un poco perdido(https://fastapi.tiangolo.com/).Y para el 
+tratamiento de los datos he utilizado pandas, ya que es más eficiente y era una libreria que habia aprendido a usar tanto en clase como por mi cuenta. Por 
+lo tanto no he tenido mucha duda con este aspecto y si tenia revisionaba los projectos o ejercicios de clase que aun guardo. Si que he tenido ciertos problemas 
+para abrir el archivo en la parte upload y he tenido que utilizzar la funcion open.
+Ahora durante lo que queda de semana tratare de hacer los demas puntos adicionales.
