@@ -37,22 +37,16 @@ La ejecución del programa se realizara con el siguiente comando en la carpeta d
 
 uvicorn main:app --reload
 
-Las diferentes funciones se realizan en las siguientes urls:
+Las diferentes funciones se realizan en las siguientes url:
 
-Reporte 1:
+http://127.0.0.1:8000/docs
 
-http://127.0.0.1:8000/total
+En ella podemos encontrar las diferentes funciones
 
-Que generara el archivo order_prices.csv y retornara a la pagina web este archivo en formato json.
+Las tres primeras(total,compasxproducto,ranking) son los tres reportes. Para ejecutarlos debera hacer click en el que desea, despues en try out y finalmente enel boton execute. Los tres get devuelven el archivo generado en formato json.
 
-Reporte 2:
+/upload obtendra un archivo y lo guardara, si no tiene de nombre customers.csv,orders.csv o products.csv tambien se guarda pero no sustituye ninguno de estos
 
-http://127.0.0.1:8000/comprasxproducto
+/download descargara un archivo que este almacenado se debera llenar el nombre ocn la extension del archivo
 
-Que generara el archivo products_customers.csv y retornara a la pagina web este archivo en formato json.
-
-Reporte 3:
-
-http://127.0.0.1:8000/ranking
-
-Que generara el archivo customer_ranking.csv y el archivo order_prices.csv (necesitamos actualizar este archivo) y retornara a la pagina web el primer archivo en formato json.
+/delete borra un archivo que este almacenado se debera llenar el nombre ocn la extension del archivo
