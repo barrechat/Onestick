@@ -5,7 +5,7 @@ Preparación del entorno de desarrollo
 Para empezar con el desarrollo del proyecto, se deben instalar unos prerequisitos en el sistema.Suponemos un entorno de desarrollo linux.
 
 Python
-Se requiere de una instalación de Python. Se puede descargar el instalador para el sistema operativo de tu elección en la web oficial de Python.
+Se requiere de una instalación de Python 3.9. Se puede descargar el instalador para el sistema operativo de tu elección en la web oficial de Python.
 
 python -V
 Lo que nos debería dar una respuesta parecida a:
@@ -16,7 +16,7 @@ De lo contario, se deberá configurar correctamente.
 Para sistemas Linux debera ejercutarse en terminal:
 
 sudo apt-get update
-sudo apt-get install python3.8
+sudo apt-get install python3.9
 
 Pip
 Pip es el administrador de paquetes que se usa en el proyecto. Normalmente viene preinstalado en Python, pero nos podemos asegurar ejecutando el siguiente comando en el terminal:
