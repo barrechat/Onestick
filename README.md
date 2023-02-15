@@ -25,7 +25,6 @@ python -m ensurepip
 
 Dependencias
 
-Requiere python-multipart  pip install python-multipart
 Descargaras el archivo prueba.zip y descomprimiras. Nos situamos dentro de la carpeta descomprimida y comenzamos con la instalacion de dependencias mediante una terminal.
 
 El proyecto requiere que se instalen algunos paquetes de Python. Usaremos Pip, y el archivo requirements.txt con el siguiente comando:
