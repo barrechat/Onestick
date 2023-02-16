@@ -50,3 +50,7 @@ Las tres primeras(total,compasxproducto,ranking) son los tres reportes. Para eje
 /download descargara un archivo que este almacenado se debera llenar el nombre ocn la extension del archivo
 
 /delete borra un archivo que este almacenado se debera llenar el nombre ocn la extension del archivo
+
+FRONTEND
+El archivo frontend.zip es lo que he podido hacer de frontend, esta hecho con react, y supuestamente llenaria unas tablas con los datos del csv.
+No renderiza por alguna razon que no se, eliminando el fetch no renderiza ni eliminando los hooks
